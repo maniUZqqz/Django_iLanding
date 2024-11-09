@@ -8,4 +8,10 @@ def home(request):
         request, 'home/index.html', Context
     )
 
+def Service_details(request):
+    Context = {
+    }
+    return render(
+        request, 'home/service-details.html', Context
+    )
 
