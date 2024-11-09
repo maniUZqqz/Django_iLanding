@@ -5,6 +5,10 @@
     <title>
         {% block title %}{% endblock %}
     </title>
+    {% block link %}
+            <link rel="stylesheet" href="">
+    {% endblock %}
+
 </head>
 <body>
 {% include "includes/header.html" %}
@@ -12,5 +16,7 @@
 {% block content %}{% endblock %}
 
 {% include "includes/footer.html" %}
+
+{% include "includes/js.html" %}
 </body>
 </html>
